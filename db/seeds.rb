@@ -11,21 +11,21 @@ user1 = User.find_or_create_by!({
   first_name: 'Austin',
   last_name: 'Kretzschmar',
   email: 'test@gmail.com',
-  password: 'testpassword1234'
+  password_digest: 'testpassword1234'
 })
 
 user2 = User.find_or_create_by!({
   first_name: 'Courtney',
   last_name: 'Amos',
   email: 'email@example.com',
-  password: 'password'
+  password_digest: 'password'
 })
   
 user3 = User.find_or_create_by!({
   first_name: 'Brandon',
   last_name: 'MacDonald',
   email: 'example@gmail.com',
-  password: '123456789'
+  password_digest: '123456789'
 })
 
 
