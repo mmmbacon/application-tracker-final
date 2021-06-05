@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-## Users
+# Users
 user1 = User.find_or_create_by!({
   first_name: 'Austin',
   last_name: 'Kretzschmar',
@@ -30,7 +30,7 @@ user3 = User.find_or_create_by!({
 
 
 ## Jobs
-user1.jobs.create!({
+user1.job.create!({
   title: "Junior Full-Stack Web Developer",
   company: "Facebook",
   details: "As a Full Stack React Engineer at Newton, you will help develop core features of our React Native and React Web projects and integrate with our both teams. You'll use modern techniques, tools, and frameworks and can communicate the tradeoffs for your technical decisions. You'll drive features from start to finish, from gathering requirements with business stakeholders to leading technical design and implementation on all platforms. You write high-quality, testable code. When mistakes are made, you dive deep into root-cause and focus on solutions. You work well in a small collaborative team; every member is a key contributor. You'll mentor junior engineers in delivering solutions and lead the team in best practices.",
@@ -44,7 +44,7 @@ user1.jobs.create!({
   contact_socialmedia: 'linkedin.com/alexlam'
 })
 
-user2.jobs.create!({
+user2.job.create!({
   title: 'Senior Developer',
   company: 'Google',
   details: 'I would like to be a senior dev, but this job would require me to move.',
@@ -58,7 +58,7 @@ user2.jobs.create!({
   contact_socialmedia: 'linkedin.com/jdoe'
 })
   
-user3.jobs.create!({
+user3.job.create!({
   title: 'Burger Flipper',
   company: 'McDonalds',
   details: 'Long description about the job of being a fry cook at McDonalds',
@@ -75,25 +75,67 @@ user3.jobs.create!({
 ## Events
 #job1 = user1.jobs.find_by id: 1
 
-puts "Jobs", user1.jobs.inspect
+puts "Jobs", user1.job[0].inspect
 
-job1.events.create!({
+user1.job[0].event.create!({
   title: 'Follow Up',
   date: '2021/07/20',
   location: '321 Road St, Seattle WA',
   details: 'Follow Up with my contact'
 })
 
-user2.jobs[0].events.create!({
+user2.job[0].event.create!({
   title: 'Interview w/ Company',
   date: '2021/06/22',
   location: '123 Vancouver St, Victoria BC',
   details: 'Call to confirm'
 })
 
-user3.jobs[0].events.create!({
+user3.job[0].event.create!({
   title: 'Virtual Interview',
   date: '2021/04/02',
   location: 'Zoom',
   details: 'will email zoom link 1 hr before interview'
 })
+
+
+
+
+## ------------------ ##
+# User.create!({
+#   first_name: 'Austin',
+#   last_name: 'Kretzschmar',
+#   email: 'test@gmail.com',
+#   password_digest: 'testpassword1234'
+# })
+
+# Job.create!({
+#   user_id: 1,
+#   title: 'Burger Flipper',
+#   company: 'McDonalds',
+#   details: 'Long description about the job of being a fry cook at McDonalds',
+#   status: 'Interviewing',
+#   salary: 30000,
+#   url: 'https://jobs.smartrecruiters.com/McDonaldsCanada/743999751554055-ft-cashiers-cooks-customer-service-scottsdale-north-delta',
+#   location: 'Delta',
+#   contact_name: 'Ronald McDonald',
+#   contact_email: 'ronald@mcdonalds.com',
+#   contact_phone: '(555) 555-6677',
+#   contact_socialmedia: 'linkedin.com/ronaldmcD'
+# })
+
+# Event.create!({
+#   job_id: 1,
+#   title: 'Virtual Interview',
+#   date: '02/04/2021',
+#   location: 'Zoom',
+#   details: 'will email zoom link 1 hr before interview'
+# })
+
+
+
+# job1.events.push(event1)
+# job1.save!
+
+# user1.jobs.push(job1)
+# user1.save!

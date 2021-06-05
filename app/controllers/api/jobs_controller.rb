@@ -28,7 +28,7 @@
 
 class Api::JobsController < ApplicationController
   def index
-    render json: Jobs.all.to_json
+    render json: Job.all.to_json
   end
 
   def create
