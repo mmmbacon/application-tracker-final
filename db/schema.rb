@@ -10,40 +10,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_05_202257) do
+ActiveRecord::Schema.define(version: 2021_06_05_215523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.date "date"
-    t.string "title"
+    t.string "title", null: false
+    t.date "date", null: false
     t.string "location"
-    t.boolean "notify"
+    t.text "details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "details"
+    t.integer "job_id"
+    t.index ["job_id"], name: "index_events_on_job_id"
   end
 
   create_table "jobs", force: :cascade do |t|
-    t.string "title"
-    t.string "company"
-    t.string "description"
-    t.string "status"
+    t.string "title", null: false
+    t.string "company", null: false
+    t.integer "status", null: false
     t.integer "salary"
     t.string "url"
     t.string "location"
+    t.text "details"
+    t.string "contact_name"
+    t.string "contact_email"
+    t.string "contact_phone"
+    t.string "contact_socialmedia"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_jobs_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "password"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "email", null: false
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "middlename"
   end
 
+  add_foreign_key "events", "jobs"
+  add_foreign_key "jobs", "users"
 end

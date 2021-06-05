@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :jobs, dependent: :destroy
+  has_many :job, dependent: :destroy
 end
