@@ -73,10 +73,6 @@ user3.job.create!({
 })
 
 ## Events
-#job1 = user1.jobs.find_by id: 1
-
-puts "Jobs", user1.job[0].inspect
-
 user1.job[0].event.create!({
   title: 'Follow Up',
   date: '2021/07/20',
@@ -97,45 +93,3 @@ user3.job[0].event.create!({
   location: 'Zoom',
   details: 'will email zoom link 1 hr before interview'
 })
-
-
-
-
-## ------------------ ##
-# User.create!({
-#   first_name: 'Austin',
-#   last_name: 'Kretzschmar',
-#   email: 'test@gmail.com',
-#   password_digest: 'testpassword1234'
-# })
-
-# Job.create!({
-#   user_id: 1,
-#   title: 'Burger Flipper',
-#   company: 'McDonalds',
-#   details: 'Long description about the job of being a fry cook at McDonalds',
-#   status: 'Interviewing',
-#   salary: 30000,
-#   url: 'https://jobs.smartrecruiters.com/McDonaldsCanada/743999751554055-ft-cashiers-cooks-customer-service-scottsdale-north-delta',
-#   location: 'Delta',
-#   contact_name: 'Ronald McDonald',
-#   contact_email: 'ronald@mcdonalds.com',
-#   contact_phone: '(555) 555-6677',
-#   contact_socialmedia: 'linkedin.com/ronaldmcD'
-# })
-
-# Event.create!({
-#   job_id: 1,
-#   title: 'Virtual Interview',
-#   date: '02/04/2021',
-#   location: 'Zoom',
-#   details: 'will email zoom link 1 hr before interview'
-# })
-
-
-
-# job1.events.push(event1)
-# job1.save!
-
-# user1.jobs.push(job1)
-# user1.save!
