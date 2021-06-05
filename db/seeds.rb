@@ -28,3 +28,13 @@ Job.create([
     location: "12 Sunpark Plaza SE, Calgary AB, T3N01K"
   }
 ])
+
+##Events
+Event.create([
+  {
+    :title => 'Follow Up',
+    :notes => 'Follow Up with my contact',
+    :date => '2021/07/20',
+    :location => '',
+  }
+])
