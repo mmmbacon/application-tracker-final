@@ -1,5 +1,8 @@
 class Api::UsersController < ApplicationController
   def index
+<<<<<<< HEAD
+    render json: User.all.to_json
+=======
     render json: { :users => [
       {
         :guid => '0001', #generate later
@@ -18,6 +21,21 @@ class Api::UsersController < ApplicationController
         :password_confirmation => 'password'
       }
     ]}.to_json
+>>>>>>> 7cc95485e80c4adf8695aca45db01f01fe8ebee4
+  end
+
+  def create
+  end
+
+  def destroy
+  end
+
+  def update
+  end
+
+  private
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
   end
 
   def create
