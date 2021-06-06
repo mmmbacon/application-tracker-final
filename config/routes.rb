@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   namespace :api, defaults: { format: 'json' } do
-    resources :users, only: [:index, :create, :destory, :update]
+    resources :users, only: [:create, :show, :index]
     resources :jobs, only: [:index, :create, :destroy, :update]
     resources :events, only: [:index, :create, :destroy, :update]
   end
