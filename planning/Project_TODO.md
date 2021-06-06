@@ -23,7 +23,13 @@
 
       Start Development ✓
         * Build Routes/Controllers/Models in Rails ✓
-        * Build Components in Isolation until there's something on the backend
+        * Components:
+          * Main Page
+          * Side Bar
+          * Job Item Container
+          * Main Column Container
+          * Login
+          * Job Item Form
 
 ## 12th Polishing / Styling Finishing
 
