@@ -24,11 +24,12 @@
       Start Development ✓
         * Build Routes/Controllers/Models in Rails ✓
         * Components:
+          * App
           * Main Page
           * Side Bar
+            * Side Bar
           * Job Item Container
           * Main Column Container
-          * Login
           * Job Item Form
 
 ## 12th Polishing / Styling Finishing
