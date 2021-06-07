@@ -25,12 +25,17 @@
         * Build Routes/Controllers/Models in Rails ✓
         * Components:
           * App
-          * Main Page
+            * Router - Courtney
+          * Pages
+            * SplashLogin - Brandon
+            * 5 Column Layout
+              * Modal
+            * UserPage(Stretch)
           * Side Bar
-            * Side Bar
-          * Job Item Container
+          * Job Item (5 Col layout)
           * Main Column Container
-          * Job Item Form
+            * Column Heading
+          * Job Item Form (Modal) - Austin
 
 ## 12th Polishing / Styling Finishing
 
