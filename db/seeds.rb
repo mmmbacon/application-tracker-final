@@ -11,21 +11,21 @@ user1 = User.find_or_create_by!({
   first_name: 'Austin',
   last_name: 'Kretzschmar',
   email: 'test@gmail.com',
-  password_digest: 'testpassword1234'
+  password_digest: '$2y$10$cc8dAb5QbKJOsWxeaxZO2.MfUyme9PZvwD2BdeGoEu78VXnZdHygm'
 })
 
 user2 = User.find_or_create_by!({
   first_name: 'Courtney',
   last_name: 'Amos',
   email: 'email@example.com',
-  password_digest: 'password'
+  password_digest: '$2y$10$cc8dAb5QbKJOsWxeaxZO2.MfUyme9PZvwD2BdeGoEu78VXnZdHygm'
 })
   
 user3 = User.find_or_create_by!({
   first_name: 'Brandon',
   last_name: 'MacDonald',
   email: 'example@gmail.com',
-  password_digest: '123456789'
+  password_digest: '$2y$10$cc8dAb5QbKJOsWxeaxZO2.MfUyme9PZvwD2BdeGoEu78VXnZdHygm'
 })
 
 

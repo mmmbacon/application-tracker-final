@@ -3,8 +3,13 @@ Rails.application.routes.draw do
   #get 'static/index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
+  
   namespace :api, defaults: { format: 'json' } do
-    resources :users, only: [:index, :create, :destory, :update]
+    post '/login', to: 'sessions#create'
+    delete '/logout', to: 'sessions#destroy'
+    get '/logged_in', to: 'sessions#is_logged_in?'
+    
+    resources :users, only: [:create, :show, :index]
     resources :jobs, only: [:index, :create, :destroy, :update]
     resources :events, only: [:index, :create, :destroy, :update]
   end
