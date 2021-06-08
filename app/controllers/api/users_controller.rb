@@ -1,18 +1,20 @@
 class Api::UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :show]
   def index
-    @users = User.all
+    render json: {
+      users: User.all
+    }
 
-    if @users
-      render json: {
-        users: @users
-      }
-    else
-      render json: {
-        stats: 500,
-        errors: ['no users found']
-      }
-    end
+    # if @users
+    #   render json: {
+    #     users: @users
+    #   }
+    # else
+    #   render json: {
+    #     stats: 500,
+    #     errors: ['no users found']
+    #   }
+    # end
     # render json: User.all.to_json
   end
 

@@ -30,7 +30,7 @@ user3 = User.find_or_create_by!({
 
 
 ## Jobs
-user1.job.create!({
+user1.jobs.create!({
   title: "Junior Full-Stack Web Developer",
   company: "Facebook",
   details: "As a Full Stack React Engineer at Newton, you will help develop core features of our React Native and React Web projects and integrate with our both teams. You'll use modern techniques, tools, and frameworks and can communicate the tradeoffs for your technical decisions. You'll drive features from start to finish, from gathering requirements with business stakeholders to leading technical design and implementation on all platforms. You write high-quality, testable code. When mistakes are made, you dive deep into root-cause and focus on solutions. You work well in a small collaborative team; every member is a key contributor. You'll mentor junior engineers in delivering solutions and lead the team in best practices.",
@@ -44,7 +44,7 @@ user1.job.create!({
   contact_socialmedia: 'linkedin.com/alexlam'
 })
 
-user2.job.create!({
+user2.jobs.create!({
   title: 'Senior Developer',
   company: 'Google',
   details: 'I would like to be a senior dev, but this job would require me to move.',
@@ -58,7 +58,7 @@ user2.job.create!({
   contact_socialmedia: 'linkedin.com/jdoe'
 })
   
-user3.job.create!({
+user3.jobs.create!({
   title: 'Burger Flipper',
   company: 'McDonalds',
   details: 'Long description about the job of being a fry cook at McDonalds',
@@ -73,21 +73,21 @@ user3.job.create!({
 })
 
 ## Events
-user1.job[0].event.create!({
+user1.jobs[0].events.create!({
   title: 'Follow Up',
   date: '2021/07/20',
   location: '321 Road St, Seattle WA',
   details: 'Follow Up with my contact'
 })
 
-user2.job[0].event.create!({
+user2.jobs[0].events.create!({
   title: 'Interview w/ Company',
   date: '2021/06/22',
   location: '123 Vancouver St, Victoria BC',
   details: 'Call to confirm'
 })
 
-user3.job[0].event.create!({
+user3.jobs[0].events.create!({
   title: 'Virtual Interview',
   date: '2021/04/02',
   location: 'Zoom',

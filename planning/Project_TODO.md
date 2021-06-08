@@ -25,22 +25,63 @@
         * Build Routes/Controllers/Models in Rails ✓
 
         * Backend
-          * Login endpoint
+          * Register endpoint ✓
+          * Login/Logout endpoint ✓
+          * User 
+          * Jobs 
+          * Events endpoints - In progress (Brandon switch back to api/...)
+          * Update on Jobs
 
         * Components:
           * App
-            * Router                - Courtney
-              * Front end auth      - Courtney
-          * SplashLogin           - Brandon -> Courtney
-          * SplashRegister        - Brandon -> Courtney
+            * Router                - Courtney ✓
+              * Front end auth      - Courtney ✓
+          * SplashLogin           - Brandon -> Courtney ✓
+          * SplashRegister        - Brandon -> Courtney ✓
           * Pages
-            * 5 Column Layout
+            * 5 Column Layout       - In progress
             * UserPage(Stretch)
-          * Side Bar                - Brandon
-          * Job Item (5 Col layout) - Brandon
-          * Main Column Container
+          * Side Bar                - Brandon ✓
+          * Job Item (5 Col layout) - Brandon - In Progress - Needs to fetch Jobs data
+            * Main Column Container 
             * Column Heading
-          * Job Item Form (Modal)   - Austin
+          * Job Item Form (Modal)   - Austin - In Progress - Connect to DB
+            * 
+
+
+
+Notes:
+          post -> api/jobs -> 
+          {
+            job: {},
+            events: [1,2]
+          }
+
+          Controller:
+            1) Grab current_user -> user_id
+            2) Create a job - Job.new(@current_user.id)
+            2) (job_id)For each event in request.events... 
+                Event.new(job_id)
+
+          get -> api/jobs
+          {
+            jobs: []
+          }
+
+
+
+
+
+
+          post -> api/jobs -> Controller - Create new job
+          post -> api/events -> Controller - Create new event
+          post -> api/events -> Controller - Create new event
+          post -> api/events -> Controller - Create new event
+
+
+
+
+
 
 ## 12th Polishing / Styling Finishing
 

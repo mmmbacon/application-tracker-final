@@ -1,41 +1,14 @@
-# class Api::V1::FruitsController < ApplicationController
-#   def index
-#     render json: Fruit.all
-#   end
-
-#   def create
-#     fruit = Fruit.create(fruit_params)
-#     render json: fruit
-#   end
-
-#   def destroy
-#     Fruit.destroy(params[:id])
-#   end
-
-#   def update
-#     fruit = Fruit.find(params[:id])
-#     fruit.update_attributes(fruit_params)
-#     render json: fruit
-#   end
-
-#   private
-
-#   def fruit_params
-#     params.require(:fruit).permit(:id, :name, :description)
-#   end
-# end
-
-
 class Api::JobsController < ApplicationController
   before_action :logged_in_user
 
   def index
-    @user = get_user
-    @jobs = @user.jobs
 
-    if @jobs
+    @user = User.find(session[:user_id])
+    @user_jobs = Job.where(user_id: @user.id)
+    
+    if @user_jobs
       render json: {
-        jobs: @jobs
+        jobs: @user_jobs
       }
     else 
       render json: {
@@ -46,7 +19,8 @@ class Api::JobsController < ApplicationController
   end
 
   def show
-    @job = Job.find(params[:id])
+    @user = User.find(session[:user_id])
+    @job = Job.where(user_id: @user.id, id: params[:id])
 
     if @job
       render json: {
@@ -55,19 +29,71 @@ class Api::JobsController < ApplicationController
     else 
       render json: {
         status: 500,
-        errors: ['event not found']
+        errors: ['job not found']
       }
     end
   end
 
   def create
-    @job = Job.create(job_params)
+    @user = User.find(session[:user_id])
+    @job = Job.new(job_params)
+    @job.user_id = @user.id
+    @job.save!
+    if params[:event]
+      @event = Event.new(event_params)
+      @event.job_id = @job.id
+      @event.save!
+    end
+
+    if @job
+      if @event
+        render json: {
+          job: @job,
+          event: @event
+        }
+      elsif 
+        render json: {
+          job: @job
+        }
+      end
+    else 
+      render json: {
+        status: 500,
+        errors: ['Job or Event could not be created']
+      }
+    end
   end
 
   def destroy
   end
 
-  def update
+  def update :id
+    @job = Job.find(params[:id]).where(user_id: session[:user_id]) 
+    @job = Job.update(job_params)
+
+    # if params[:event]
+    #   @event = Event.update(event_params)
+    #   @event.job_id = @job.id
+    #   @event.save!
+    # end
+
+    if @job
+      if @event
+        render json: {
+          job: @job,
+          event: @event
+        }
+      elsif 
+        render json: {
+          job: @job
+        }
+      end
+    else 
+      render json: {
+        status: 500,
+        errors: ['Job or Event could not be created']
+      }
+    end
   end
 
   private
@@ -76,20 +102,29 @@ class Api::JobsController < ApplicationController
       @user = User.find(params[:user_id])
     end
   
-  def job_params
-    params.require(:job).permit(
-      :user_id,
-      :company,
-      :title,
-      :status,
-      :salary,
-      :url,
-      :location,
-      :details,
-      :contact_name,
-      :contact_email,
-      :contact_phone,
-      :contact_socialmedia,
-    )
-  end
+    def job_params
+      params.require(:job).permit(
+        :user_id,
+        :company,
+        :title,
+        :status,
+        :salary,
+        :url,
+        :location,
+        :details,
+        :contact_name,
+        :contact_email,
+        :contact_phone,
+        :contact_socialmedia,
+      )
+    end
+  
+    def event_params
+      params.require(:event).permit(
+        :title,
+        :date,
+        :location,
+        :details,
+      )
+    end
 end
