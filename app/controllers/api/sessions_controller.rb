@@ -11,8 +11,8 @@ def create
   else
     render json: {
       status: 401,
-      errors: ['no sure user', 'verify credentials and try again or signup']
-    }
+      errors: ['verify credentials and try again or signup']
+    }, status: 401
   end
 end
 
