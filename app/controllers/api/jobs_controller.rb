@@ -32,6 +32,7 @@ class Api::JobsController < ApplicationController
   end
 
   def create
+    @job = Job.create(job_params)
   end
 
   def destroy
@@ -40,4 +41,22 @@ class Api::JobsController < ApplicationController
   def update
   end
 
+  private
+
+  def job_params
+    params.require(:job).permit(
+      :user_id,
+      :company,
+      :title,
+      :status,
+      :salary,
+      :url,
+      :location,
+      :details,
+      :contact_name,
+      :contact_email,
+      :contact_phone,
+      :contact_socialmedia,
+    )
+  end
 end
