@@ -27,8 +27,37 @@
 
 
 class Api::JobsController < ApplicationController
+  before_action :logged_in_user
+
   def index
-    render json: Job.all.to_json
+    @user = get_user
+    @jobs = @user.jobs
+
+    if @jobs
+      render json: {
+        jobs: @jobs
+      }
+    else 
+      render json: {
+        status: 500,
+        errors: ['job not found']
+      }
+    end
+  end
+
+  def show
+    @job = Job.find(params[:id])
+
+    if @job
+      render json: {
+        job: @job
+      }
+    else 
+      render json: {
+        status: 500,
+        errors: ['event not found']
+      }
+    end
   end
 
   def create
@@ -43,6 +72,10 @@ class Api::JobsController < ApplicationController
 
   private
 
+    def get_user
+      @user = User.find(params[:user_id])
+    end
+  
   def job_params
     params.require(:job).permit(
       :user_id,

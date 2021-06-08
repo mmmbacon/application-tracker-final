@@ -23,14 +23,24 @@
 
       Start Development ✓
         * Build Routes/Controllers/Models in Rails ✓
+
+        * Backend
+          * Login endpoint
+
         * Components:
           * App
-          * Main Page
-          * Side Bar
-            * Side Bar
-          * Job Item Container
+            * Router                - Courtney
+              * Front end auth      - Courtney
+          * SplashLogin           - Brandon -> Courtney
+          * SplashRegister        - Brandon -> Courtney
+          * Pages
+            * 5 Column Layout
+            * UserPage(Stretch)
+          * Side Bar                - Brandon
+          * Job Item (5 Col layout) - Brandon
           * Main Column Container
-          * Job Item Form
+            * Column Heading
+          * Job Item Form (Modal)   - Austin
 
 ## 12th Polishing / Styling Finishing
 

@@ -1,4 +1,5 @@
 class Api::UsersController < ApplicationController
+  before_action :logged_in_user, only: [:index, :show]
   def index
     @users = User.all
 
@@ -18,12 +19,12 @@ class Api::UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
 
-    if @users
+    if @user
       render json: {
         user: @user
       }
     else 
-      redner json: {
+      render json: {
         status: 500,
         errors: ['user not found']
       }
@@ -48,8 +49,7 @@ class Api::UsersController < ApplicationController
   end
 
   private
-
-  def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
-  end
+    def user_params
+      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+    end
 end

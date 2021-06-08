@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
 
-  has_many :job, dependent: :destroy
+  has_many :jobs, dependent: :destroy
 
   def as_json(options = {})
     super(options.merge({ except: [:password_digest] }))
