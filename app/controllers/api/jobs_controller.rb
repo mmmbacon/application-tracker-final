@@ -71,9 +71,11 @@ class Api::JobsController < ApplicationController
   end
 
   private
+
     def get_user
       @user = User.find(params[:user_id])
     end
+  
   def job_params
     params.require(:job).permit(
       :user_id,

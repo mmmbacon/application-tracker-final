@@ -32,6 +32,7 @@ class Api::EventsController < ApplicationController
   end
 
   def create
+    @event = Event.create(event_params)
   end
 
   def destroy
@@ -41,7 +42,17 @@ class Api::EventsController < ApplicationController
   end
 
   private
+
   def get_job
     @job = Job.find(params[:job_id])
+    
+  def event_params
+    params.require(:event).permit(
+      :job_id,
+      :title,
+      :date,
+      :location,
+      :details,
+    )
   end
 end
