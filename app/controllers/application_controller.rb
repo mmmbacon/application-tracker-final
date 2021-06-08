@@ -22,7 +22,8 @@ class ApplicationController < ActionController::Base
   end
 
   def logout!
-    session.clear
+    reset_session
+    @user = nil
   end
 
   def store_location
