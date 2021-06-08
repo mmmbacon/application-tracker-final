@@ -27,7 +27,7 @@
 
 
 class Api::JobsController < ApplicationController
-  
+  before_action :logged_in_user
 
   def index
     @user = get_user

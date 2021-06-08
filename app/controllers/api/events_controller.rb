@@ -1,5 +1,5 @@
 class Api::EventsController < ApplicationController
-  before_action :get_job
+  before_action :logged_in_user, :get_job 
 
   def index
     @events = @job.events

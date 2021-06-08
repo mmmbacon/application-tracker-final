@@ -1,3 +1,4 @@
+include Api::SessionsHelper
 class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
 
@@ -22,5 +23,18 @@ class ApplicationController < ActionController::Base
 
   def logout!
     session.clear
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
+  end
+
+  private
+  def logged_in_user
+      unless logged_in?
+        store_location
+        flash[:danger] = "Please log in."
+        redirect_to '/login'
+      end
   end
 end
