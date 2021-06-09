@@ -2,7 +2,6 @@ class Api::JobsController < ApplicationController
   before_action :logged_in_user
 
   def index
-
     @user = User.find(session[:user_id])
     @user_jobs = Job.where(user_id: @user.id)
     
@@ -39,6 +38,7 @@ class Api::JobsController < ApplicationController
     @job = Job.new(job_params)
     @job.user_id = @user.id
     @job.save!
+    
     if params[:event]
       @event = Event.new(event_params)
       @event.job_id = @job.id
@@ -65,42 +65,45 @@ class Api::JobsController < ApplicationController
   end
 
   def destroy
-  end
-
-  def update :id
-    @job = Job.find(params[:id]).where(user_id: session[:user_id]) 
-    @job = Job.update(job_params)
-
-    # if params[:event]
-    #   @event = Event.update(event_params)
-    #   @event.job_id = @job.id
-    #   @event.save!
-    # end
-
+    @job = Job.where(user_id: session[:user_id], id: params[:id]).destroy_all
+    
     if @job
-      if @event
-        render json: {
-          job: @job,
-          event: @event
-        }
-      elsif 
-        render json: {
-          job: @job
-        }
-      end
+      render json: {
+        status: 200,
+        errors: ['Successfully Deleted Job']
+      }
     else 
       render json: {
         status: 500,
-        errors: ['Job or Event could not be created']
+        errors: ['Job or Event could not be updated']
+      }
+    end
+  end
+
+  def update
+    @job = Job.where(user_id: session[:user_id], id: params[:id])
+
+    if params[:event]
+      @event = Event.where(job_id: params[:id])
+      @event = Event.update(event_params)
+    end
+
+    @job = Job.update(job_params)
+  
+    if @job
+      render json: {
+        status: 200,
+        errors: ['Successfully Updated Job']
+      }
+    else 
+      render json: {
+        status: 500,
+        errors: ['Job or Event could not be updated']
       }
     end
   end
 
   private
-
-    def get_user
-      @user = User.find(params[:user_id])
-    end
   
     def job_params
       params.require(:job).permit(
