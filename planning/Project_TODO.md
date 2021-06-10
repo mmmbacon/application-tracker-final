@@ -46,8 +46,14 @@
             * Main Column Container 
             * Column Heading
           * Job Item Form (Modal)   - Austin - In Progress - Connect to DB
-            * 
 
+  ## June 9th TODO
+      * Delete Logout Button from dashboard
+      * Connect Job Item to Edit Modal
+      * Add Delete and Edit Buttons to Job Item
+      * Fix Stying for Job Item (Doesnt span full width)
+      * Dynamic Logo Rendering on Job Modal - Async / useEffect
+      * Redux Jobs slices - Add / Edit / Delete
 
 
 Notes:
