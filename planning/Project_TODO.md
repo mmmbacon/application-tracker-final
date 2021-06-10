@@ -27,10 +27,10 @@
         * Backend
           * Register endpoint ✓
           * Login/Logout endpoint ✓
-          * User 
-          * Jobs 
-          * Events endpoints - In progress (Brandon switch back to api/...)
-          * Update on Jobs
+          * User ✓
+          * Jobs ✓
+          * Events endpoints - In progress (Brandon switch back to api/...) ✓
+          * Update on Jobs ✓
 
         * Components:
           * App
@@ -40,58 +40,63 @@
           * SplashRegister        - Brandon -> Courtney ✓
           * Pages
             * 5 Column Layout       - In progress
+            * Responsive Design?    - In progress
             * UserPage(Stretch)
           * Side Bar                - Brandon ✓
-          * Job Item (5 Col layout) - Brandon - In Progress - Needs to fetch Jobs data
+          * Job Item (5 Col layout) - Brandon - In Progress - Needs to fetch Jobs data ✓
             * Main Column Container 
             * Column Heading
-          * Job Item Form (Modal)   - Austin - In Progress - Connect to DB
+          * Job Item Form (Modal)   - Austin - In Progress - Connect to DB ✓
 
   ## June 9th TODO
-      * Delete Logout Button from dashboard
-      * Connect Job Item to Edit Modal
-      * Add Delete and Edit Buttons to Job Item
-      * Fix Stying for Job Item (Doesnt span full width)
+      * Delete Logout Button from dashboard ✓
+      * Connect Job Item to Edit Modal ✓
+      * Add Delete and Edit Buttons to Job Item ✓
+      * Fix Stying for Job Item (Doesnt span full width) ✓
+      * Redux Jobs slices - Add / Edit / Delete ✓
+
+ ## June 10th Todo
+      * Conditional Delete Button Rendering - A ✓
+      * Add url fields to job item for resume/cover letter
+        * Add schema logic - B
+        * Params in Jobs controller - B
+        * Front-end - ABC
+      * Go Over validations on Modal - C
+        * Red Text?
+      * Console logs, clear console errors - ABC
+
+    (Stretch/Cleanup)
+      * View User Profile Page
+      * Multiple Events on one Job
+      * Sidebar button functionality (Profile, Logo)
       * Dynamic Logo Rendering on Job Modal - Async / useEffect
-      * Redux Jobs slices - Add / Edit / Delete
+      * Extend Seed Data / Preparations for Demo
+      * Readme
 
-
-Notes:
-          post -> api/jobs -> 
-          {
-            job: {},
-            events: [1,2]
-          }
-
-          Controller:
-            1) Grab current_user -> user_id
-            2) Create a job - Job.new(@current_user.id)
-            2) (job_id)For each event in request.events... 
-                Event.new(job_id)
-
-          get -> api/jobs
-          {
-            jobs: []
-          }
-
-
-
-
-
-
-          post -> api/jobs -> Controller - Create new job
-          post -> api/events -> Controller - Create new event
-          post -> api/events -> Controller - Create new event
-          post -> api/events -> Controller - Create new event
-
-
-
-
-
+    (Stretch Stretch)
+      * Notifications
+      * Drag'n'Drop
+      * User Profile
+        * Data View
+        * Job Board Recommendations
+      * Sortable View
+      * Follow up Alert / Functionality
+        * Generate Email
 
 ## 12th Polishing / Styling Finishing
+  * Clean and Modern, Minimal, Simple to use
+  * Job Item looks good and functional
+  * Getting rid of drag and drop?
+  * Location of Edit and Delete buttons
+  * Headings design
+  * Column seperation borders?
+  * Padding on Jobs Modal
+  * Responsiveness of Main Five Column layout
+  * Sidebar width, Button radius
 
 ## 14th Testing
+  * Cypress Tests?
+  * Jest Tests?
 
 ## 15th Presentation Planning
 
