@@ -3,8 +3,9 @@ class Api::JobsController < ApplicationController
 
   def index
     @user = User.find(session[:user_id])
-    @user_jobs = Job.where(user_id: @user.id)
-    
+    @user_jobs = Job.where(user_id: @user.id) #collection
+    puts @user.inspect
+
     if @user_jobs
       render json: {
         jobs: @user_jobs
@@ -16,7 +17,7 @@ class Api::JobsController < ApplicationController
       }
     end
   end
-
+  
   def show
     @user = User.find(session[:user_id])
     @job = Job.where(user_id: @user.id, id: params[:id])
