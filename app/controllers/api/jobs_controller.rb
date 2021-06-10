@@ -66,19 +66,8 @@ class Api::JobsController < ApplicationController
   end
 
   def destroy
-    @job = Job.where(user_id: session[:user_id], id: params[:id]).destroy_all
-    
-    if @job
-      render json: {
-        status: 200,
-        errors: ['Successfully Deleted Job']
-      }
-    else 
-      render json: {
-        status: 500,
-        errors: ['Job or Event could not be updated']
-      }
-    end
+    @job = Job.find_by(user_id: session[:user_id], id: params[:id])
+    @job.destroy
   end
 
   def update
