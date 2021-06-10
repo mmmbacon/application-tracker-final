@@ -127,6 +127,9 @@ class Api::JobsController < ApplicationController
         :contact_email,
         :contact_phone,
         :contact_socialmedia,
+        :resume_url,
+        :coverletter_url,
+        :extra_url,
       )
     end
   
