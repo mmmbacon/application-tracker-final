@@ -81,32 +81,50 @@ class Api::JobsController < ApplicationController
   end
 
   def update
-    @job = Job.where(user_id: session[:user_id], id: params[:id])
+    @job = Job.find_by(user_id: session[:user_id], id: params[:id])
 
     if params[:event]
-      @event = Event.where(job_id: params[:id])
+      @event = Event.find_by(job_id: params[:id])
       @event = Event.update(event_params)
     end
 
-    @job = Job.update(job_params)
+    @job.update(job_params)
   
     if @job
-      render json: {
-        status: 200,
-        errors: ['Successfully Updated Job']
-      }
+      if @event
+        render json: {
+          job: @job,
+          event: @event
+        }
+      elsif 
+        render json: {
+          job: @job
+        }
+      end
     else 
       render json: {
         status: 500,
-        errors: ['Job or Event could not be updated']
+        errors: ['Job or Event could not be created']
       }
     end
+    # if @job
+    #   render json: {
+    #     status: 200,
+    #     job: @job
+    #   }
+    # else 
+    #   render json: {
+    #     status: 500,
+    #     errors: ['Job or Event could not be updated']
+    #   }
+    # end
   end
 
   private
   
     def job_params
       params.require(:job).permit(
+        :id,
         :user_id,
         :company,
         :title,
