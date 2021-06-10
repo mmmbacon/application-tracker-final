@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(version: 2021_06_05_215523) do
     t.string "contact_email"
     t.string "contact_phone"
     t.string "contact_socialmedia"
+    t.string "resume_url"
+    t.string "coverletter_url"
+    t.string "extra_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id", null: false
