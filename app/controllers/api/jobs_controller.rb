@@ -75,7 +75,7 @@ class Api::JobsController < ApplicationController
 
     if params[:event]
       @event = Event.find_by(job_id: params[:id])
-      @event = Event.update(event_params)
+      @event.update(event_params)
     end
 
     @job.update(job_params)
@@ -132,6 +132,8 @@ class Api::JobsController < ApplicationController
   
     def event_params
       params.require(:event).permit(
+        :id,
+        :job_id,
         :title,
         :date,
         :location,
