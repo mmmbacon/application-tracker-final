@@ -62,15 +62,6 @@
         * Params in Jobs controller - B ✓
         * Front-end - ABC ✓
       * Console logs, clear console errors - ABC ✓
-
-    (Stretch/Cleanup)
-      * View User Profile Page
-      * Multiple Events on one Job
-      * Sidebar button functionality (Profile, Logo)
-      * Dynamic Logo Rendering on Job Modal - Async / useEffect
-      * Extend Seed Data / Preparations for Demo
-      * Readme
-
   
   ## June 11th TODO
       * Go Over validations on Modal - C ✓
@@ -80,19 +71,25 @@
       (Stretch/Cleanup)
       * Dynamic Logo Rendering on Job Modal - Async / useEffect
         * Pair Programming? ✓
-      * Extend Seed Data / Preparations for Demo
-      * Multiple Events on one Job
-      * Responsive Five Column Layout
-      * Sidebar button functionality (Profile, Logo)
+      * Extend Seed Data / Preparations for Demo ✓
+      * Responsive Five Column Layout                 - Brandon
+      * Sidebar button functionality (Profile, Logo)  - Brandon
         * Remove User Button if not being used
         * Update Logo button
         * Update User Icon to Google Initials
+        * Google Calendar Button - calendar.google.com
+      * Reset Button to clear form                    - Austin
+      * Mail:to on Modal                              - Austin
+      * User Profile                                  - Courtney    
+        * Data View
+        * Job Board Recommendations
+        * Sortable View
+      * Multiple Events on one Job                    - Pair
       * Readme
-      * View User Profile Page
 
     (Stretch Stretch)
-      * Notifications
       * Drag'n'Drop
+      * Notifications
       * User Profile
         * Data View
         * Job Board Recommendations
