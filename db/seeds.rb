@@ -61,16 +61,16 @@ user1.jobs.create!({
 
 user1.jobs.create!({
   title: 'Senior .Net Developer',
-  company: 'buyatab',
+  company: 'Buyatab',
   details: 'A finTech maverick and officially one of the most popular technology companies in BC, Buyatab is a leading supplier of advanced online gift card infrastructure, technology and marketing services for leading brands. Working with some of the world’s leading brands (including Four Seasons, Fairmont, Whole Foods Market, Lowes), we are recognized for our solution and design flexibility, focus on client brand standards, high-quality customer support, and fraud protection guarantee. ',
   status: 0,
   salary: 30000,
   url: 'https://jobs.smartrecruiters.com/McDonaldsCanada/743999751554055-ft-cashiers-cooks-customer-service-scottsdale-north-delta',
   location: 'Airdrie',
-  contact_name: 'Dave Smith',
-  contact_email: 'dave.smith@safeway.com',
+  contact_name: 'Dwight Shrute',
+  contact_email: 'beetman@buyatab.com',
   contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/davesmith'
+  contact_socialmedia: 'linkedin.com/beetman'
 })
 
 user1.jobs.create!({
@@ -228,8 +228,7 @@ user1.jobs.create!({
 })
 
 user1.jobs.create!({
-  title: 'Senior Software Engineer - Backend (Ads)
-  ',
+  title: 'Senior Software Engineer - Backend (Ads)',
   company: 'Fresh Prep',
   details: "We're looking for Senior backend engineers to join our team in Toronto to help grow the UberEats ads business which enables eaters to discover new foods, and restaurants to grow their customer base. You'll work with teams behind apps used by millions globally every day and be a part of the technical foundations of a new product, built at Uber Canada's new development center.",
   status: 1,
@@ -289,10 +288,10 @@ user1.jobs[8].events.create!({
 })
 
 user1.jobs[9].events.create!({
-  title: 'Contract Discussion with HR',
-  date: '2021/06/22',
-  location: 'Phone Call',
-  details: ''
+  title: '3rd Round Interviews',
+  date: '2021/06/25',
+  location: 'Zoom',
+  details: 'Whiteboard technical && HR'
 })
 
 user1.jobs[10].events.create!({
