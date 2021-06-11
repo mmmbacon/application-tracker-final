@@ -55,15 +55,13 @@
       * Fix Stying for Job Item (Doesnt span full width) ✓
       * Redux Jobs slices - Add / Edit / Delete ✓
 
- ## June 10th Todo
+  ## June 10th Todo
       * Conditional Delete Button Rendering - A ✓
       * Add url fields to job item for resume/cover letter
-        * Add schema logic - B
-        * Params in Jobs controller - B
-        * Front-end - ABC
-      * Go Over validations on Modal - C
-        * Red Text?
-      * Console logs, clear console errors - ABC
+        * Add schema logic - B ✓
+        * Params in Jobs controller - B ✓
+        * Front-end - ABC ✓
+      * Console logs, clear console errors - ABC ✓
 
     (Stretch/Cleanup)
       * View User Profile Page
@@ -73,13 +71,32 @@
       * Extend Seed Data / Preparations for Demo
       * Readme
 
+  
+  ## June 11th TODO
+      * Go Over validations on Modal - C ✓
+        * Salary Validation - Console Log warning ✓
+        * Negative Numbers (Number Limit) ✓
+
+      (Stretch/Cleanup)
+      * Dynamic Logo Rendering on Job Modal - Async / useEffect
+        * Pair Programming? ✓
+      * Extend Seed Data / Preparations for Demo
+      * Multiple Events on one Job
+      * Responsive Five Column Layout
+      * Sidebar button functionality (Profile, Logo)
+        * Remove User Button if not being used
+        * Update Logo button
+        * Update User Icon to Google Initials
+      * Readme
+      * View User Profile Page
+
     (Stretch Stretch)
       * Notifications
       * Drag'n'Drop
       * User Profile
         * Data View
         * Job Board Recommendations
-      * Sortable View
+        * Sortable View
       * Follow up Alert / Functionality
         * Generate Email
 
