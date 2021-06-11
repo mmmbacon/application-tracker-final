@@ -75,7 +75,14 @@ class Api::JobsController < ApplicationController
 
     if params[:event]
       @event = Event.find_by(job_id: params[:id])
-      @event.update(event_params)
+      #If event exists, update it
+      if @event 
+        @event.update(event_params)
+      else
+        #Otherwise, create a new event
+        @event = Event.new(event_params)
+        @event.save!
+      end
     end
 
     @job.update(job_params)
