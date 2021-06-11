@@ -151,7 +151,7 @@ user1.jobs.create!({
   title: 'Backend Developer',
   company: 'Aritzia',
   details: '',
-  status: 3,
+  status: 2,
   salary: 100000,
   url: 'https://www.aritzia.com/en/aritzia/careers/careers-landing-page/careers-landing.html',
   location: 'Vancouver, BC',
@@ -229,9 +229,9 @@ user1.jobs.create!({
 
 user1.jobs.create!({
   title: 'Senior Software Engineer - Backend (Ads)',
-  company: 'Fresh Prep',
+  company: 'Uber',
   details: "We're looking for Senior backend engineers to join our team in Toronto to help grow the UberEats ads business which enables eaters to discover new foods, and restaurants to grow their customer base. You'll work with teams behind apps used by millions globally every day and be a part of the technical foundations of a new product, built at Uber Canada's new development center.",
-  status: 1,
+  status: 0,
   salary: 95000,
   url: 'https://www.uber.com/global/en/careers/list/101205/?iis=marketing&iisn=ZipRecruiter&iisp=paid&rx_campaign=ziprecruiter86&rx_group=124699&rx_job=101205&rx_medium=cpc&rx_p=79b24503-fc50-4291-9e6a-026a3c3039ac&rx_r=none&rx_source=ziprecruiter&rx_ts=20210611T120724Z&rx_viewer=bea8ea61cae311eba262d71679b9494e0b03d59e739940db89c6d8f0e7c00a86',
   location: 'Toronto, ON',
@@ -295,7 +295,7 @@ user1.jobs[9].events.create!({
 })
 
 user1.jobs[10].events.create!({
-  title: 'Contract Discussion with HR',
+  title: 'Second Interview',
   date: '2021/06/22',
   location: 'Phone Call',
   details: ''
