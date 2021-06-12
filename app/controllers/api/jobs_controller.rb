@@ -104,17 +104,6 @@ class Api::JobsController < ApplicationController
         errors: ['Job or Event could not be created']
       }
     end
-    # if @job
-    #   render json: {
-    #     status: 200,
-    #     job: @job
-    #   }
-    # else 
-    #   render json: {
-    #     status: 500,
-    #     errors: ['Job or Event could not be updated']
-    #   }
-    # end
   end
 
   private
@@ -126,6 +115,7 @@ class Api::JobsController < ApplicationController
         :company,
         :title,
         :status,
+        :index,
         :salary,
         :url,
         :location,

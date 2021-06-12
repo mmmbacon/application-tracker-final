@@ -72,14 +72,14 @@
       * Dynamic Logo Rendering on Job Modal - Async / useEffect
         * Pair Programming? ✓
       * Extend Seed Data / Preparations for Demo ✓
-      * Responsive Five Column Layout                 - Brandon
-      * Sidebar button functionality (Profile, Logo)  - Brandon
+      * Responsive Five Column Layout                 - Brandon ✓
+      * Sidebar button functionality (Profile, Logo)  - Brandon ✓
         * Remove User Button if not being used
-        * Update Logo button
-        * Update User Icon to Google Initials
-        * Google Calendar Button - calendar.google.com
-      * Reset Button to clear form                    - Austin
-      * Mail:to on Modal                              - Austin
+        * Update Logo button ✓
+        * Update User Icon to Google Initials ✓
+        * Google Calendar Button - calendar.google.com ✓
+      * Reset Button to clear form                    - Austin ✓
+      * Mail:to on Modal                              - Austin ✓
       * User Profile                                  - Courtney    
         * Data View
         * Job Board Recommendations

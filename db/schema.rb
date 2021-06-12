@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2021_06_05_215523) do
     t.string "title", null: false
     t.string "company", null: false
     t.integer "status", null: false
+    t.string "index"
     t.integer "salary"
     t.string "url"
     t.string "location"
