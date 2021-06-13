@@ -50,6 +50,23 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def update
+    @user = User.find_by(id: session[:user_id])
+    @user.update(user_params)
+
+    if @user.save
+      render json: {
+        status: :updated,
+        user: @user
+      }
+    else
+      render json: {
+        status: 400,
+        errors: @user.errors.full_messages
+      }, status: 400
+    end
+  end
+
   private
     def user_params
       params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
