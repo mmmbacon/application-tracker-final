@@ -8,9 +8,9 @@
 
 # Users
 user1 = User.find_or_create_by!({
-  first_name: 'Austin',
-  last_name: 'Kretzschmar',
-  email: 'test@gmail.com',
+  first_name: 'Dwight',
+  last_name: 'Schrute',
+  email: 'beetman@shrutefarms.com',
   password_digest: '$2y$10$cc8dAb5QbKJOsWxeaxZO2.MfUyme9PZvwD2BdeGoEu78VXnZdHygm'
 })
 
