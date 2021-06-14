@@ -81,9 +81,9 @@
       * Reset Button to clear form                    - Austin
       * Mail:to on Modal                              - Austin
       * User Profile                                  - Courtney    
-        * Data View
-        * Job Board Recommendations
-        * Sortable View
+        * Data View ✓
+        * Job Board Recommendations ✓
+        * Sortable View ✓
       * Multiple Events on one Job                    - Pair
       * Readme
 
@@ -98,22 +98,40 @@
         * Generate Email
 
 ## 12th Polishing / Styling Finishing
-  * Clean and Modern, Minimal, Simple to use
-  * Job Item looks good and functional
+  * Clean and Modern, Minimal, Simple to use ✓
+  * Job Item looks good and functional ✓
   * Getting rid of drag and drop?
-  * Location of Edit and Delete buttons
-  * Headings design
+  * Location of Edit and Delete buttons ✓
+  * Headings design ✓
   * Column seperation borders?
-  * Padding on Jobs Modal
-  * Responsiveness of Main Five Column layout
-  * Sidebar width, Button radius
+  * Padding on Jobs Modal ✓
+  * Responsiveness of Main Five Column layout ✓
+  * Sidebar width, Button radius ✓
 
-## 14th Testing
+## 14th Cleanup and Testing
+
+  * Review Styling ✓
+  * Pallette Review ✓
+  * Font Review ✓
+  * Font Import Error ✓
+  * Logo and Brand name - wip
+
+  * Add Salary Chart ✓
+
+  * Functional Manual Tests
   * Cypress Tests?
   * Jest Tests?
 
+  TODO:
+    Add modal confirmation when deleting from edit modal
+
 ## 15th Presentation Planning
 
-## 16th Buffer Day / Rest - CI/CD / Heroku Deployment
+  * Write about individual features
+  * Develop Presentation Outline
+
+## 16th Trial Run for Presentation
+
+  * 
 
 ## 17th Presentation
