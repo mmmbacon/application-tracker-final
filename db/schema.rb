@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_06_05_215523) do
     t.date "date", null: false
     t.string "location"
     t.text "details"
+    t.boolean "expired"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "job_id"

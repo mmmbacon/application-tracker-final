@@ -51,6 +51,7 @@ class Api::EventsController < ApplicationController
       :date,
       :location,
       :details,
+      :expired
     )
   end
 end
