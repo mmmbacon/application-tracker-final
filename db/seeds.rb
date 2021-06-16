@@ -27,21 +27,27 @@ user1.jobs.create!({
   contact_name: 'Alex Lam',
   contact_email: 'alex.l@gmail.com',
   contact_phone: '(250) 485-6631',
-  contact_socialmedia: ''
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
   title: 'Senior Developer',
   company: 'Google',
   details: 'I would like to be a senior dev, but this job would require me to move.',
-  status: 0,
-  salary: 500000,
+  status: 4,
+  salary: 20000,
   url:'https://www.linkedin.com/jobs/view/2554027046',
   location: 'San Francisco',
   contact_name: 'John Doe',
   contact_email: 'j.doe@gmail.com',
   contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/jdoe'
+  contact_socialmedia: 'linkedin.com/jdoe',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
   
 user1.jobs.create!({
@@ -50,13 +56,16 @@ user1.jobs.create!({
   details: 'Design, research, development and maintenance for the FortiClient EMS software
   Stay on top of new developments in the fields of front-end and back-end web application development',
   status: 1,
-  salary: 75000,
+  salary: 61000,
   url: 'https://www.linkedin.com/jobs/search/?alternateChannel=bysave&alternateCode=seturl&currentJobId=2578601531&jobPostingId=2574921206&origin=JOBS_HOME_SIMILAR_JOBS&pivotType=similarJobs&refId=vqwVCnlqmIajzkp7sieyvA%3D%3D',
   location: 'Burnaby, BC',
   contact_name: 'John MacLellan',
   contact_email: 'jmaclellan@fortinet.com',
-  contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/jmaclellan'
+  contact_phone: '(354) 845-9875',
+  contact_socialmedia: 'linkedin.com/jmaclellan',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -64,27 +73,33 @@ user1.jobs.create!({
   company: 'Buyatab',
   details: 'A finTech maverick and officially one of the most popular technology companies in BC, Buyatab is a leading supplier of advanced online gift card infrastructure, technology and marketing services for leading brands. Working with some of the world’s leading brands (including Four Seasons, Fairmont, Whole Foods Market, Lowes), we are recognized for our solution and design flexibility, focus on client brand standards, high-quality customer support, and fraud protection guarantee. ',
   status: 0,
-  salary: 30000,
+  salary: 60000,
   url: 'https://jobs.smartrecruiters.com/McDonaldsCanada/743999751554055-ft-cashiers-cooks-customer-service-scottsdale-north-delta',
   location: 'Airdrie',
   contact_name: 'Dwight Shrute',
   contact_email: 'beetman@buyatab.com',
-  contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/beetman'
+  contact_phone: '(548) 954-8423',
+  contact_socialmedia: 'linkedin.com/beetman',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
   title: 'Senior Frontend Engineer, Marketing',
   company: 'Shopify',
   details: '',
-  status: 1,
-  salary: 130000,
+  status: 4,
+  salary: 58000,
   url: 'https://www.shopify.ca/careers/senior-frontend-engineer-marketing-remote-americas-bf487eb9',
   location: 'Remote',
   contact_name: ' Monica Gellar',
   contact_email: 'monicag@shopify.ca',
-  contact_phone: '(604)584-3678',
-  contact_socialmedia: ''
+  contact_phone: '(604) 584-3678',
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -92,43 +107,52 @@ user1.jobs.create!({
   company: 'Docker',
   details: 'Position is for Docker Hub',
   status: 0,
-  salary: 106000,
+  salary: 66000,
   url: 'https://www.docker.com/career-openings',
   location: 'Remote',
   contact_name: 'Goku Son',
   contact_email: 'goku@dockerhub.ca',
   contact_phone: '(804) 548-6521',
-  contact_socialmedia: ''
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
   title: 'Senior Developer',
-  company: 'Google',
+  company: 'Netflix',
   details: 'I would like to be a senior dev, but this job would require me to move.',
   status: 1,
-  salary: 500000,
+  salary: 60000,
   url:'https://www.linkedin.com/jobs/view/2554027046',
   location: 'San Francisco',
   contact_name: 'John Doe',
   contact_email: 'j.doe@gmail.com',
-  contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/jdoe'
+  contact_phone: '(585) 895-4857',
+  contact_socialmedia: 'linkedin.com/jdoe',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
-  title: 'Senior Software Developer (Full-Stack)',
-  company: 'Unity Games',
+  title: 'Senior Game Developer (Full-Stack)',
+  company: 'Electronic Arts',
   details: 'Develop web applications using modern web technologies.
   Design, develop and maintain our service APIs.
   Ensure service scalability through effective code and data storage design.',
   status: 3,
-  salary: 150000,
+  salary: 72000,
   url: 'https://www.linkedin.com/jobs/search/?currentJobId=2546145034&jobPostingId=2574921206&pivotType=similarJobs',
   location: 'Burnaby, BC',
   contact_name: 'Jan Backer',
   contact_email: 'jan.backer@unitytechnologies.com',
-  contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/janbacker'
+  contact_phone: '(568) 471-6397',
+  contact_socialmedia: 'linkedin.com/janbacker',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -138,13 +162,16 @@ user1.jobs.create!({
   Work in the backend to develop web applications.
   Work in the REST API Gateway to implement new endpoints.',
   status: 4,
-  salary: 175000,
+  salary: 92000,
   url: 'https://www.linkedin.com/jobs/search/?currentJobId=2559029930&jobPostingId=2574921206&pivotType=similarJobs',
   location: 'Vancouver, BC',
   contact_name: 'Bill Stoddart',
   contact_email: 'bstoddart@netskope.com',
-  contact_phone: '(555) 555-6677',
-  contact_socialmedia: 'linkedin.com/bstoddart'
+  contact_phone: '(854) 845-9861',
+  contact_socialmedia: 'linkedin.com/bstoddart',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -152,13 +179,16 @@ user1.jobs.create!({
   company: 'Aritzia',
   details: '',
   status: 2,
-  salary: 100000,
+  salary: 87000,
   url: 'https://www.aritzia.com/en/aritzia/careers/careers-landing-page/careers-landing.html',
   location: 'Vancouver, BC',
   contact_name: 'Olivia White',
   contact_email: 'o.white@aritzia.ca',
-  contact_phone: '(250)784-3548',
-  contact_socialmedia: ''
+  contact_phone: '(250) 784-3548',
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -166,27 +196,33 @@ user1.jobs.create!({
   company: 'Lululemon',
   details: '',
   status: 4,
-  salary: 250000,
+  salary: 85000,
   url: 'https://careers.lululemon.com/en_US/careers',
   location: 'Toronto, ON',
   contact_name: 'June Smith',
   contact_email: 'junesmith@lululemon.ca',
-  contact_phone: '(408)542-6584',
-  contact_socialmedia: ''
+  contact_phone: '(408) 542-6584',
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
   title: 'Software Development Engineer',
-  company: 'Amazon',
+  company: 'Apple',
   details: 'Job ID: A1586970',
   status: 2,
-  salary: 120000,
+  salary: 100000,
   url: 'https://www.google.com/search?q=amazon+developer+jobs&rlz=1C5CHFA_enCA917CA917&oq=amazon+developer+jobs&aqs=chrome..69i57j0l3j0i22i30l6.3735j0j7&sourceid=chrome&ie=UTF-8&ibp=htl;jobs&sa=X&ved=2ahUKEwjR37C9nZDxAhVOgp4KHZqiAIAQkd0GMAB6BAgVEAE#fpstate=tldetail&htivrt=jobs&htiq=amazon+developer+jobs&htidocid=siPKV9ikWhPubY6WAAAAAA%3D%3D&sxsrf=ALeKk03H5AWVnr00Q1tSDUh5JvCZxLL-Nw:1623436831772',
   location: 'Vancouver, BC',
   contact_name: 'Rachel Green',
   contact_email: 'rachel.green@amazon.ca',
-  contact_phone: '(250)845-6574',
-  contact_socialmedia: ''
+  contact_phone: '(250) 845-6574',
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -194,13 +230,16 @@ user1.jobs.create!({
   company: 'CyberCoders',
   details: 'Participate in cross-functional projects in an agile environment. Build, deploy, and maintain your own code. Support standard development practices including idiomatic syntax, design patterns, and Test-driven development',
   status: 0,
-  salary: 17000,
+  salary: 85000,
   url: 'https://www.linkedin.com/jobs/search/?geoId=90000084&location=San%20Francisco%20Bay%20Area',
   location: 'San Francisco, CA',
   contact_name: 'Jamie Balduc',
   contact_email: 'balducj@cybercoders.com',
-  contact_phone: '(555)555-5555',
-  contact_socialmedia: ''
+  contact_phone: '(654) 548-2510',
+  contact_socialmedia: '',
+  resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
+  coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
+  extra_url: 'https://startbootstrap.com/theme/creative',
 })
 
 user1.jobs.create!({
@@ -215,12 +254,12 @@ user1.jobs.create!({
   Empathy when listening to other opinions
   ',
   status: 2,
-  salary: 55000,
+  salary: 75000,
   url: 'https://ca.indeed.com/viewjob?jk=f814fb9211b7cd73&q=Junior+Developer&l=Vancouver%2C+BC&tk=1f7u5q046pi9i800&from=web&vjs=3',
   location: 'Vancouver, BC',
   contact_name: 'Andy Lindsay',
   contact_email: 'andy.lindsay@gmail.com',
-  contact_phone: '(778) 354 8243',
+  contact_phone: '(778) 354-8243',
   contact_socialmedia: '@thegoat',
   resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
   coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
@@ -237,7 +276,7 @@ user1.jobs.create!({
   location: 'Toronto, ON',
   contact_name: 'Michael Scott',
   contact_email: 'michael.g.scott@gmail.com',
-  contact_phone: '(111) 234 5678',
+  contact_phone: '(111) 234-5678',
   contact_socialmedia: 'linkedin.com/thatswhatshesaid',
   resume_url: 'https://www.canva.com/design/DAEhGu6oMUE/uLavfNgcESSe3ZD-ZjabAQ/view?utm_content=DAEhGu6oMUE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
   coverletter_url: 'https://www.canva.com/design/DAEhGqMFIkg/yUMIkVq8w7_J9ctb5t1vbA/edit?set.doctype=TACQ-qm91ig%3A1&set.category.id=tACZCn1F2Jc&set.auth-token=eeb6_1UzexHG1_pDCc6mww&layoutQuery=Letter',
@@ -248,7 +287,7 @@ user1.jobs.create!({
 user1.jobs[0].events.create!({
   title: 'HR Interview',
   date: '2021/07/20',
-  location: 'Zoom',
+  location: 'https://us05web.zoom.us/j/89038259337?pwd=US9oS056M1lYb1l3aG5lT00zWEtOdz09',
   details: 'Alex will send zoom link 24hrs before interview time'
 })
 
@@ -262,41 +301,41 @@ user1.jobs[1].events.create!({
 user1.jobs[3].events.create!({
   title: 'Follow Up with Recruiter',
   date: '2021/07/20',
-  location: '',
+  location: 'https://us05web.zoom.us/j/89038259337?pwd=US9oS056M1lYb1l3aG5lT00zWEtOdz09',
   details: 'Thank you email for chattign earlier in the week about potential oppurtunities at buyatab'
 })
 
 user1.jobs[6].events.create!({
   title: 'Meeting with Recruiter',
   date: '2021/06/14',
-  location: 'Zoom',
+  location: 'https://us05web.zoom.us/j/89038259337?pwd=US9oS056M1lYb1l3aG5lT00zWEtOdz09',
   details: 'Talk about hiring process'
 })
 
 user1.jobs[7].events.create!({
   title: 'Virtual Interview',
   date: '2021/06/22',
-  location: 'Zoom',
+  location: 'Bentall Center',
   details: 'Technical interview'
 })
 
 user1.jobs[8].events.create!({
   title: 'HR Phone Call',
   date: '2021/07/02',
-  location: '',
+  location: 'https://us05web.zoom.us/j/89038259337?pwd=US9oS056M1lYb1l3aG5lT00zWEtOdz09',
   details: 'Phone call with Bill to discuss contract'
 })
 
 user1.jobs[9].events.create!({
   title: '3rd Round Interviews',
   date: '2021/06/25',
-  location: 'Zoom',
+  location: 'Vancouver, BC',
   details: 'Whiteboard technical && HR'
 })
 
 user1.jobs[10].events.create!({
   title: 'Second Interview',
   date: '2021/06/22',
-  location: 'Phone Call',
+  location: 'https://us05web.zoom.us/j/89038259337?pwd=US9oS056M1lYb1l3aG5lT00zWEtOdz09',
   details: ''
 })
