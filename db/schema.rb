@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_05_215523) do
+ActiveRecord::Schema.define(version: 2021_07_01_174657) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,12 +39,12 @@ ActiveRecord::Schema.define(version: 2021_06_05_215523) do
     t.string "contact_email"
     t.string "contact_phone"
     t.string "contact_socialmedia"
-    t.string "resume_url"
-    t.string "coverletter_url"
-    t.string "extra_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id", null: false
+    t.string "coverletter_url"
+    t.string "resume_url"
+    t.string "extra_url"
     t.index ["user_id"], name: "index_jobs_on_user_id"
   end
 
@@ -55,7 +55,6 @@ ActiveRecord::Schema.define(version: 2021_06_05_215523) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "middlename"
   end
 
   add_foreign_key "events", "jobs"
