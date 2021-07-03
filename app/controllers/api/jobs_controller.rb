@@ -20,7 +20,7 @@ class Api::JobsController < ApplicationController
   
   def show
     @user = User.find(session[:user_id])
-    @job = Job.where(user_id: @user.id, id: params[:id])
+    @job = Job.where(user_id: @user.id, id: params[:id]).order(index: :asc);
 
     if @job
       render json: {
